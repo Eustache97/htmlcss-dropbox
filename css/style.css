@@ -11,3 +11,72 @@ html{
     font-family: 'Open Sans', sans-serif;
 }
 /* /RESET */
+/* COMMON */
+.flex-container{
+    display: flex;
+}
+.container1{
+    width: 70%;
+    margin: 0 auto;
+}
+.container2{
+    width:60%;
+    margin: 0 auto;
+    padding:2em 0;
+}
+
+/* /COMMON */
+/* HEADER */
+header{
+    background-color: lightblue;
+    width: 100%;
+}
+
+.header-top{
+    height: 50px;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 .5em;
+    z-index: 999;
+    /* debug */
+    background-color: white;
+    border: 1px solid black;
+    /* /debug */
+}
+.header-top-left, .header-top-right{
+    width: 30%;
+    height: 100%;
+    /* debug */ 
+    background-color: aqua;
+    /* /debug */
+}
+.jumbotron{
+    width: 100%;
+    margin-top: 50px;
+    padding: 2.5em 0 0;
+}
+.div-jumbotron{
+    /* debug */
+    min-height: 150px;
+    border: 1px solid black;
+    padding: 3em 0 0;
+    /* /debug */
+}
+.col-text{
+    width: 40%;
+    /* debug */
+    min-height: 100px;
+    background-color: aqua;
+    /* /debug */
+}
+.col-image{
+    width: calc(100% - 40%);
+    /* debug */
+    /* min-height: 100px; */
+    background-color: blueviolet;
+    /* /debug */
+}
+/* /HEADER */
