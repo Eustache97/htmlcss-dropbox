@@ -25,16 +25,17 @@ html{
     margin: 0 auto;
     padding:2em 0;
 }
-.col-text{
+.col-40{
     width: 40%;
     /* debug */
     min-height: 100px;
     background-color: aqua;
     /* /debug */
 }
-.col-image{
-    width: calc(100% - 40%);
+.col-60{
+    width:60%;
     /* debug */
+    min-height: 100px;
     background-color: blueviolet;
     /* /debug */
 }
@@ -122,12 +123,7 @@ border: 1px solid black;
     background-color: grey;
     /* /debug */
 }
-.kteam{
-    /* debug */
-    min-height: 100px;
-    background-color: green;
-    /* /debug */
-}
+
 .designit{
     height: 300px;
     width: 100%;
@@ -172,16 +168,16 @@ border: 1px solid black;
 .designit .center{
     background-color:beige;
 }
-.start-section{
+.tryit-section{
     background-color: aquamarine;
     padding: 2em;
 }
-.start{
+.tryit{
     /* debug */
     border: 1px solid black;
     /* /debug */
 }
-.last-section{
+.faq-section{
     padding: 2em;
     /* debug */
     border: 1px solid black;
