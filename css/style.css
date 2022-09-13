@@ -14,6 +14,7 @@ html{
 /* COMMON */
 .flex-container{
     display: flex;
+    flex-wrap: wrap;;
 }
 .container1{
     width: 70%;
@@ -24,8 +25,31 @@ html{
     margin: 0 auto;
     padding:2em 0;
 }
-
+.col-text{
+    width: 40%;
+    /* debug */
+    min-height: 100px;
+    background-color: aqua;
+    /* /debug */
+}
+.col-image{
+    width: calc(100% - 40%);
+    /* debug */
+    background-color: blueviolet;
+    /* /debug */
+}
+.col{ 
+    width: calc(100% / 3 - 1em);
+    /* debug */
+    min-height: 100px;
+    /* /debug */
+}
 /* /COMMON */
+/* UTILITY */
+.mrgn{
+    margin-top: 3em;
+}
+/* /UTILITY */
 /* HEADER */
 header{
     background-color: lightblue;
@@ -49,7 +73,7 @@ header{
 .header-top-left, .header-top-right{
     width: 30%;
     height: 100%;
-    /* debug */ 
+    /* debug */
     background-color: aqua;
     /* /debug */
 }
@@ -65,18 +89,116 @@ header{
     padding: 3em 0 0;
     /* /debug */
 }
-.col-text{
-    width: 40%;
+
+/* /HEADER */
+/* MAIN */
+.packets, .row{
+    gap: 1em;
+    justify-content: space-between;
+}
+.top{
+    height: 30px;
+    text-align: center;
+    /* debug */
+    border: 1px solid black;
+    /* /debug */
+}
+.content{
+/* debug */
+min-height: 50px;
+background-color: aquamarine;
+border: 1px solid black;
+/* /debug */
+}
+.image{
     /* debug */
     min-height: 100px;
-    background-color: aqua;
+    background-color: pink;
     /* /debug */
 }
-.col-image{
-    width: calc(100% - 40%);
+.text{
     /* debug */
-    /* min-height: 100px; */
-    background-color: blueviolet;
+    min-height: 100px;
+    background-color: grey;
     /* /debug */
 }
-/* /HEADER */
+.kteam{
+    /* debug */
+    min-height: 100px;
+    background-color: green;
+    /* /debug */
+}
+.designit{
+    height: 300px;
+    width: 100%;
+    justify-content: space-between;
+}
+.left, .right{
+    flex-wrap: wrap;
+    background-color: #a8a5a5;
+}
+.col2{
+    width: calc(100% / 2);
+    height: calc(100% / 2);
+    /* debug */
+    border: 1px solid black;
+    /* /debug */
+}
+.designit .left #designit-logo{
+    background-color:#9ae4c6;
+    padding: .5em;
+}
+.designit .left #asu{
+    background-color:blueviolet;
+}
+.designit .left #uf{
+    background-color: #42a4c5;
+}
+.designit .left #toops{
+    background-color:red;
+}
+.designit .right #wbr{
+    background-color:#cb0808;
+}
+.designit .right #hearst{
+    background-color:aquamarine;
+}
+.designit .right #lonely-planet{
+    background-color:blue;
+}
+.designit .right #clear-channel{
+    background-color:yellow;
+}
+.designit .center{
+    background-color:beige;
+}
+.start-section{
+    background-color: aquamarine;
+    padding: 2em;
+}
+.start{
+    /* debug */
+    border: 1px solid black;
+    /* /debug */
+}
+.last-section{
+    padding: 2em;
+    /* debug */
+    border: 1px solid black;
+    /* /debug */
+}
+.faq{
+    /* debug */
+    border: 1px solid black;
+    /* /debug */
+}
+/* MAIN */
+/* FOOTER */
+footer{
+    background-color: #0f0f0f;
+    padding: 2em;
+    /* debug */
+    min-height: 200px;
+    /* /debug */
+}
+/* /FOOTER */
