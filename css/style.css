@@ -14,7 +14,8 @@ html{
 /* COMMON */
 .flex-container{
     display: flex;
-    flex-wrap: wrap;;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .container1{
     width: 70%;
@@ -27,101 +28,160 @@ html{
 }
 .col-40{
     width: 40%;
+    padding: 1em;
     /* debug */
     min-height: 100px;
-    background-color: aqua;
+    /* background-color: aqua; */
     /* /debug */
 }
 .col-60{
     width:60%;
+    padding-top: .5em;
     /* debug */
-    min-height: 100px;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     /* /debug */
 }
+
 .col{ 
     width: calc(100% / 3 - 1em);
+    align-items: flex-start;
     /* debug */
     min-height: 100px;
     /* /debug */
+}
+h1, h2, h3, h4{
+    margin-bottom: 1em;
 }
 /* /COMMON */
 /* UTILITY */
-.mrgn{
+.mt-1{
+    margin-top: 1em;
+}
+.mt-2{
+    margin-top: 2em;
+}
+.mt-3{
     margin-top: 3em;
+}
+.mb-1{
+    margin-bottom: 1em;
+}
+.mb-2{
+    margin-bottom: 2em;
+}
+.mb-3{
+    margin-bottom: 3em;
+}
+.btn{
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+    padding: .5em;
+    /* debug */
+    border: 1px solid black
+    /* /debug */
+}
+.btn:hover{
+    opacity: .7;
+}
+.blue{
+    background-color:#2121ea ;
+}
+a.btn.blue{
+    color: white;
+}
+.white{
+    background-color: white;
+    color: grey;
+    border: 1px solid grey;
+}
+.large{
+    width: 100%;
+}
+.bordgrey{
+    border: 1px solid grey;
 }
 /* /UTILITY */
 /* HEADER */
 header{
     background-color: lightblue;
     width: 100%;
+    max-height: 470px;
 }
 
 .header-top{
     height: 50px;
     width: 100%;
-    justify-content: space-between;
+    color: black;
     position: fixed;
     top: 0;
     left: 0;
     padding: 0 .5em;
     z-index: 999;
-    /* debug */
     background-color: white;
-    border: 1px solid black;
-    /* /debug */
 }
 .header-top-left, .header-top-right{
-    width: 30%;
+    width: 35%;
     height: 100%;
-    /* debug */
-    background-color: aqua;
-    /* /debug */
+}
+#logo{
+    width: 100px;
+}
+ul{
+    list-style-type: none;
+}
+.header-top a, a.btn{
+    text-decoration: none;
+    color: inherit;
+}
+.header-menu li{
+    line-height: 50px;
+}
+.header-menu li:hover{
+    border-bottom: 3px solid #2121ea ;
+}
+#botton1{
+    line-height: normal;
 }
 .jumbotron{
     width: 100%;
-    margin-top: 50px;
-    padding: 2.5em 0 0;
+    padding-top: 50px;
 }
-.div-jumbotron{
-    /* debug */
-    min-height: 150px;
-    border: 1px solid black;
-    padding: 3em 0 0;
-    /* /debug */
+.jumbotron h1{
+    font-size: 3em;
+}
+.arrow-down{
+    display: inline-block;
+    font-size: 2em;
 }
 
 /* /HEADER */
 /* MAIN */
+.radiobtn{
+    margin: 2em 0;
+}
 .packets, .row{
     gap: 1em;
-    justify-content: space-between;
+    align-items:;
 }
 .top{
     height: 30px;
     text-align: center;
-    /* debug */
-    border: 1px solid black;
-    /* /debug */
+    line-height: 30px;
+    border-bottom: 1px solid grey;
 }
 .content{
-/* debug */
-min-height: 50px;
-background-color: aquamarine;
-border: 1px solid black;
-/* /debug */
+    padding: 1em;
+    margin-bottom: 1.5em;
 }
-.image{
-    /* debug */
-    min-height: 100px;
-    background-color: pink;
-    /* /debug */
+.content li{
+    margin-bottom: 1em;
 }
-.text{
-    /* debug */
-    min-height: 100px;
-    background-color: grey;
-    /* /debug */
+.green{
+    color: green;
+}
+.down .contact-us{
+    align-content: flex-start;
 }
 
 .designit{
@@ -136,10 +196,17 @@ border: 1px solid black;
 .col2{
     width: calc(100% / 2);
     height: calc(100% / 2);
+    /* position: relative; */
     /* debug */
     border: 1px solid black;
     /* /debug */
 }
+/* .col2 img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+} */
 .designit .left #designit-logo{
     background-color:#9ae4c6;
     padding: .5em;
