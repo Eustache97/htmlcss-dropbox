@@ -52,8 +52,21 @@ html{
 h1, h2, h3, h4{
     margin-bottom: 1em;
 }
+hr{
+    width: 10%;
+    color: inherit;
+}
 /* /COMMON */
 /* UTILITY */
+.pd-1{
+    padding: 1em;
+}
+.pd-2{
+    padding: 2em;
+}
+.pdx-2{
+    padding: 2em 0 ;
+}
 .mt-1{
     margin-top: 1em;
 }
@@ -100,6 +113,12 @@ a.btn.blue{
 }
 .bordgrey{
     border: 1px solid grey;
+}
+.display-inlineb{
+    display: inline-block;
+}
+.text-right{
+    text-align: right;
 }
 /* /UTILITY */
 /* HEADER */
@@ -162,7 +181,6 @@ ul{
 }
 .packets, .row{
     gap: 1em;
-    align-items:;
 }
 .top{
     height: 30px;
@@ -185,28 +203,30 @@ ul{
 }
 
 .designit{
-    height: 300px;
+    height: 400px;
     width: 100%;
     justify-content: space-between;
 }
 .left, .right{
     flex-wrap: wrap;
-    background-color: #a8a5a5;
+    background-color: #c0b3b3;
 }
+.col.center img{
+    width: 50%;
+}
+
 .col2{
     width: calc(100% / 2);
     height: calc(100% / 2);
-    /* position: relative; */
-    /* debug */
-    border: 1px solid black;
-    /* /debug */
+    position: relative;
 }
-/* .col2 img{
+.col2 img{
+    width: 60%;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50% -50%);
-} */
+    transform: translate(-50%, -50%);
+}
 .designit .left #designit-logo{
     background-color:#9ae4c6;
     padding: .5em;
@@ -239,29 +259,48 @@ ul{
     background-color: aquamarine;
     padding: 2em;
 }
-.tryit{
-    /* debug */
-    border: 1px solid black;
-    /* /debug */
-}
 .faq-section{
     padding: 2em;
-    /* debug */
-    border: 1px solid black;
-    /* /debug */
 }
-.faq{
-    /* debug */
-    border: 1px solid black;
-    /* /debug */
+.div-question{
+    max-height: 50px;
+    overflow: hidden;
+    border-top: 1px solid black;
+    border-bottom:1px solid black ;
+}
+.question{
+   width: 90%; 
+   display: inline-block;
+}
+.div-question:hover{
+    max-height: 150px;
+}
+.div-question a:hover{
+    transform: rotate(180deg);
+}
+.question>h4{
+    line-height: 50px;
 }
 /* MAIN */
 /* FOOTER */
 footer{
     background-color: #0f0f0f;
     padding: 2em;
+    color: white;
     /* debug */
     min-height: 200px;
     /* /debug */
 }
+.col3{
+    width: calc(100% / 5);
+}
+.col3 ul{
+    font-size: .8em;
+    line-height: 1.5em;
+}
+.col3 li a{
+    color:inherit ;
+    text-decoration: none;
+}
+
 /* /FOOTER */
