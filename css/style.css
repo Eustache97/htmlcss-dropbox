@@ -29,25 +29,14 @@ html{
 .col-40{
     width: 40%;
     padding: 1em;
-    /* debug */
-    min-height: 100px;
-    /* background-color: aqua; */
-    /* /debug */
 }
 .col-60{
     width:60%;
     padding-top: .5em;
-    /* debug */
-    /* background-color: blueviolet; */
-    /* /debug */
 }
-
 .col{ 
     width: calc(100% / 3 - 1em);
     align-items: flex-start;
-    /* debug */
-    min-height: 100px;
-    /* /debug */
 }
 h1, h2, h3, h4{
     margin-bottom: 1em;
@@ -90,9 +79,6 @@ hr{
     background-color: white;
     text-align: center;
     padding: .5em;
-    /* debug */
-    border: 1px solid black
-    /* /debug */
 }
 .btn:hover{
     opacity: .7;
@@ -287,9 +273,6 @@ footer{
     background-color: #0f0f0f;
     padding: 2em;
     color: white;
-    /* debug */
-    min-height: 200px;
-    /* /debug */
 }
 .col3{
     width: calc(100% / 5);
